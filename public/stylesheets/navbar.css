@@ -1,0 +1,6 @@
+.nav-link{
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    border-bottom-color: black;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('partials/head'); %>
+</head>
+<body>
+<%- include('partials/navbar'); %>
+
+<section class="login-block">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-5 bg-white register-box">
+                <div class="login-sec text-center">
+                    <h2>Create an Account</h2>
+
+                    <form method="post" action="/register" class="login-form">
+                        <div class="form-group row">
+                            <label for="firstName">Name</label>
+                            <input type="text" class="form-control" name="firstName" id="firstName">
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" class="form-control" name="email" id="loginEmail">
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" name="loginPassword" id="loginPassword">
+                        </div>
+
+                        <div class="form-group row margin-bottom-md">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword">
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-login" type="submit">
+                                    Create Account
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer'); %>
+</body>
+</html>
