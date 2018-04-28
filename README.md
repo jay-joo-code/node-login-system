@@ -1,5 +1,5 @@
 # node-login-system
-example login system 
+A secure login system that follows all industry standard practices.
 
 ## Features
 1. stores user data on MongoDB
