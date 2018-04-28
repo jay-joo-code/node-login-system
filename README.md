@@ -1,2 +1,8 @@
 # node-login-system
-login system with database account storage and salted hashed passwords
+example login system 
+
+## Features
+1. stores user data on MongoDB
+2. hashed passwords
+3. form validation and sanitation with express-validator
+4. cookies and sessions
