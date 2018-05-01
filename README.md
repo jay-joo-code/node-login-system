@@ -6,4 +6,7 @@ A secure login system that follows all industry standard practices.
 2. hashed passwords
 3. form validation and sanitation with express-validator
 4. cookies and sessions
-5. passport.js authentication middleware
+
+## Screenshots (frontend)
+![login](screenshots/login.jpg)
+![register](screenshots/register.jpg)
