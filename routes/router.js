@@ -1,6 +1,6 @@
 var router = require('express').Router();
 var mongoClient = require('mongodb').MongoClient;
-var config = require('./../config');
+var config = require('./../.gitignore/config');
 var bcrypt = require('bcrypt');
 var Auth = require('./../modules/Authentication');
 const saltRounds = 10;
@@ -10,7 +10,6 @@ const { matchedData, sanitize } = require('express-validator/filter');
 
 var auth = function(req, res, next) {
     console.log('authenticating: ' + req.url);
-    console.log(req.session);
 
     if (!req.session || !req.session.authenticated) {
         console.log('request reject');
@@ -40,7 +39,6 @@ router.post('/login-request', function(req, res) {
             if (err) throw err;
             collection.findOne({email: req.body.email }, function(err, user) {
                 if(err) throw err;
-                console.log(user);
                 bcrypt.compare(req.body.password, user.password, function(err, result) {
                     if (err) throw err;
                     if (result) {
@@ -84,13 +82,11 @@ router.post('/register-request', [
         // check form validation results
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
-            console.log(errors.mapped());
             return res.redirect('/register');
         } else {
             // hash password
             bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
                 if (err) throw err;
-                console.log(hash);
                 var hashPassword = hash;
 
                 // insert new user record
