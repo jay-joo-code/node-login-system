@@ -8,4 +8,5 @@ A secure login system that follows all industry standard practices.
 4. cookies and sessions
 
 ## Screenshots (frontend)
-
+![login](screenshots/login.jpg)
+![register](screenshots/register.jpg)
