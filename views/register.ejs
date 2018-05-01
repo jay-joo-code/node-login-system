@@ -13,32 +13,30 @@
                 <div class="login-sec text-center">
                     <h2>Create an Account</h2>
 
-                    <form method="post" action="/register" class="login-form">
+                    <form method="post" action="/register-request" class="login-form">
                         <div class="form-group row">
                             <label for="firstName">Name</label>
-                            <input type="text" class="form-control" name="firstName" id="firstName">
+                            <input type="text" class="form-control" name="name" value="a">
                         </div>
 
                         <div class="form-group row">
                             <label for="loginEmail">Email</label>
-                            <input type="email" class="form-control" name="email" id="loginEmail">
+                            <input type="email" class="form-control" name="email" value="test@cornell.edu">
                         </div>
 
                         <div class="form-group row">
                             <label for="loginPassword">Password</label>
-                            <input type="password" class="form-control" name="loginPassword" id="loginPassword">
+                            <input type="password" class="form-control" name="password" value="testpass">
                         </div>
 
                         <div class="form-group row margin-bottom-md">
                             <label for="confirmPassword">Confirm Password</label>
-                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword">
+                            <input type="password" class="form-control" name="confirmPassword" value="testpass">
                         </div>
 
                         <div class="form-group row">
                             <div class="col-sm-12">
-                                <button class="btn btn-login" type="submit">
-                                    Create Account
-                                </button>
+                                <button class="btn btn-login" type="submit">Create Account</button>
                             </div>
                         </div>
                     </form>

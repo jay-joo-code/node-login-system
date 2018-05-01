@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('partials/head'); %>
+</head>
+<body>
+<%- include('partials/navbar'); %>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm">
+            <form action="/logout-request" method="post">
+                <button type="submit" class="btn btn-primary">logout</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer'); %>
+
+</body>
+</html>
